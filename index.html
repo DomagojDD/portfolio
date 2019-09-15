@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Domagoj Dugi | Portfolio</title>
+  <meta name="description" content="Portfolio by Domagoj Dugi">
+  <meta name="author" content="Domagoj Dugi"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link href="socicon/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - HOME - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- Particles open div -->
+<div id="particles-js">
+
+		<!-- Sidebar -->
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#particles-js">Home</a>
+			<a href="#about">About me</a>
+			<a href="#main-works">My works</a>
+			<a href="#contact">Contact</a>
+		</div>
+	
+		<!-- Title -->
+		<div class="display-text">
+			<div id="title-text">
+				<h1>Hi! I'm Domagoj</font></h1>
+				<h2>Creative, Enthusiastic and Cool Multimedia Engineer</h2>
+				<br>
+				<br>
+			</div>
+			<a href="#about" class="start-btn">READ MORE</a>
+		</div>
+
+		<!-- Select language in text form -->
+		<div class="language-select">
+			<a href="index.html" class="language active-lang">English | </a>
+			<a href="index_hrv.html" class="language">Hrvatski</a>
+		</div>
+</div>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ABOUT ME - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="about">
+  <div class="container">
+
+    <!-- Title "About me" -->
+    <div class="section-title text-center center">
+      <h2>About Me</font></h2>
+	       <br>
+	       <br>
+    </div>
+
+    <!-- Text and photo about me -->
+    <div class="row">
+      <div class="col-md-12 text-center"><img src="img/about.png" class="img-responsive"></div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>My name is Domagoj Dugi and I live in Varazdin, Croatia. I'm Photographer, Videographer, Designer, Frontend Developer and more or less everything related to multimedia. I always try to combine my knowledge and skills to make my projects better and more successful.<p>
+		  <p>When I enrolled in high school for a media technician, I'm gained a lot of knowledge and experience about photography, video and television. Also, I was participated in projects Comenius and ACES for which ones I have been in Turkey and North Macedonia. There I met other cultures and gained new acquaintances.<p>
+		  <p>After that, I enrolled at the University North on the department of Multimedia, Design and Application which I'm still attending. Here I have further improved my knowledge and gained some new skills such as design, programming and marketing.<p>
+		  <p>For myself, I would say that I am responsible, resourceful and always ready to help. I love learning new things and sharing knowledge with others. In my spare time, I love sports, music and traveling. I am a hardworking and reliable person and I'm sure that these qualities make me ideal for every job.<p>
+		    </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - MY WORKS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- Main div for "My works" -->
+<div id="main-works">
+
+<!-- Title "My works" -->
+<div class="title-works">
+	<div class="section-title text-center center">
+		<h2>My Works</font></h2>
+	</div>
+</div>
+
+<!-- Menu buttons for works selection -->
+<div id="myBtnContainer" align="center">
+  <button class="btn-works active-works" onclick="filterSelection('all')"><b>Show all</b></button>
+  <button class="btn-works" onclick="filterSelection('photos')"><b>Photos</b></button>
+  <button class="btn-works" onclick="filterSelection('uxui')"><b>UX/UI</b></button>
+  <button class="btn-works" onclick="filterSelection('animations')"><b>Animations</b></button>
+  <button class="btn-works" onclick="filterSelection('designs')"><b>Designs</b></button>
+  <button class="btn-works" onclick="filterSelection('videos')"><b>Videos</b></button>
+  <button class="btn-works" onclick="filterSelection('web')"><b>Websites</b></button>
+  <button class="btn-works" onclick="filterSelection('3d')"><b>3D Models</b></button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row-works">
+
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg1" src="img/works/1.jpg" alt="Street photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Street photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg2" src="img/works/2.jpg" alt="Street photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Street photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg3" src="img/works/3.jpg" alt="Street photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Street photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg4" src="img/works/4.jpg" alt="Portrait photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Portrait photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg5" src="img/works/5.jpg" alt="Portrait photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Portrait photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg6" src="img/works/6.jpg" alt="Portrait photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Portrait photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg7" src="img/works/7.jpg" alt="Concert photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Concert photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg8" src="img/works/8.jpg" alt="Concert photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Concert photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg9" src="img/works/9.jpg" alt="Concert photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Concert photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg10" src="img/works/10.jpg" alt="Panning effect" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Motion photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg11" src="img/works/11.jpg" alt="Motion photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Motion photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg12" src="img/works/12.jpg" alt="Texture" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Texture photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg13" src="img/works/13.jpg" alt="Splash effect" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Splash photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg14" src="img/works/14.jpg" alt="Fire" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Fire photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg15" src="img/works/15.jpg" alt="Nature photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Nature photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg16" src="img/works/17.jpg" alt="Nature photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Nature photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg17" src="img/works/18.jpg" alt="Nature photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Nature photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg18" src="img/works/16.jpg" alt="Landscape photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Landscape photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg19" src="img/works/19.jpg" alt="Still life" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Still life photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg20" src="img/works/20.jpg" alt="Product photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Product photography</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg21" src="img/works/21.jpg" alt="Product photography" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Photography</b></h4>
+      <p>Product photography</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/l_WtVmyNoRI" target="_blank"><img src="img/works/video1.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/l_WtVmyNoRI" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Grape harvest</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/ppdnQRSbLy0" target="_blank"><img src="img/works/video2.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/ppdnQRSbLy0" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Promotional movie for volunteering</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/x196am2-amc" target="_blank"><img src="img/works/video3.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/x196am2-amc" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Comenius project in Turkey</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/f-ogbY2fqcE" target="_blank"><img src="img/works/video4.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/f-ogbY2fqcE" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Christmas video</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://www.youtube.com/watch?v=SH8aoeT-3GQ&feature=youtu.be" target="_blank"><img src="img/works/video5.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=SH8aoeT-3GQ&feature=youtu.be" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Promotional video about saving nature</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://www.youtube.com/watch?v=dyztA-o_y2w" target="_blank"><img src="img/works/video6.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=dyztA-o_y2w" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Promotional video for Advent in Varazdin</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/RnfmGN3orHY" target="_blank"><img src="img/works/video7.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/RnfmGN3orHY" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Music video</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://www.youtube.com/watch?v=KYFb2qEvOq0" target="_blank"><img src="img/works/video8.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=KYFb2qEvOq0" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>School day in Vinica</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://www.youtube.com/watch?v=uAGsfewhliQ" target="_blank"><img src="img/works/video9.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=uAGsfewhliQ" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>ACES project in Skopje</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/BZBpKpD3Pvs" target="_blank"><img src="img/works/anim1.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/BZBpKpD3Pvs" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Animation</b></h4>
+      <p>Made in After effect</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/7KqjKURHv6c" target="_blank"><img src="img/works/anim2.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/7KqjKURHv6c" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Animation</b></h4>
+      <p>Made in After effect</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/Xv6kMBw-sug" target="_blank"><img src="img/works/anim3.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/Xv6kMBw-sug" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Animation</b></h4>
+      <p>Kinetic typography animation</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://youtu.be/DGizHIgclT8" target="_blank"><img src="img/works/anim4.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/DGizHIgclT8" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Animation</b></h4>
+      <p>Intro made in After effect</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/InVIX4OX5po" target="_blank"><img src="img/works/anim5.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/InVIX4OX5po" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Animation</b></h4>
+      <p>Made in After effect</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://youtu.be/Zo9PTh5lgrQ" target="_blank"><img src="img/works/anim6.jpg" alt="Mountains" style="width:100%"></a>
+      <a href="https://youtu.be/Zo9PTh5lgrQ" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Watch on Youtube</div>
+      </a>
+		</div>
+      <h4><b>Animation</b></h4>
+      <p>Animations made in Maya and Blender</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg22" src="img/works/plakat2.jpg" alt="Promotional poster" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Design</b></h4>
+      <p>Promotional poster</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg23" src="img/works/plakat.jpg" alt="Poster made in Photoshop" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Design</b></h4>
+      <p>Poster made in Photoshop</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/letak.pdf" target="_blank"><img src="img/works/letak.jpg" style="width:100%"></a>
+      <a href="img/works/letak.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">View PDF</div>
+      </a>
+		</div>
+      <h4><b>Design</b></h4>
+      <p>Flyer design</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/barkod.pdf" target="_blank"><img src="img/works/barkod.jpg" style="width:100%"></a>
+      <a href="img/works/barkod.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">View PDF</div>
+      </a>
+		</div>
+      <h4><b>Design</b></h4>
+      <p>Creative barcode</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/dinamika.pdf" target="_blank"><img src="img/works/dinamika.jpg" style="width:100%"></a>
+      <a href="img/works/dinamika.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">View PDF</div>
+      </a>
+		</div>
+      <h4><b>Design</b></h4>
+      <p>Dynamic typography</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			 <a href="img/works/fotoletak.pdf" target="_blank"><img src="img/works/fotoletak.jpg" style="width:100%"></a>
+      <a href="img/works/fotoletak.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">View PDF</div>
+      </a>
+		</div>
+      <h4><b>Design</b></h4>
+      <p>Flyer about photography</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/knjiga.pdf" target="_blank"><img src="img/works/knjiga.jpg" style="width:100%"></a>
+      <a href="img/works/knjiga.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">View PDF</div>
+      </a>
+		</div>
+      <h4><b>Design</b></h4>
+      <p>Book cover design</p>
+    </div>
+  </div>
+  
+  
+  
+  <div class="column web">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://domagojdd.github.io/lotr-website/index.html" target="_blank"><img src="img/works/lotrweb.jpg" style="width:100%"></a>
+      <a href="https://domagojdd.github.io/lotr-website/index.html" target="_blank">
+      <div class="overlay-works"></div>
+			<div class="text-over-works">Visit website</div>
+      </a>
+		</div>
+      <h4><b>Web</b></h4>
+      <p>Website for LOTR</p>
+    </div>
+  </div>
+  
+  <div class="column web">
+    <div class="content">
+		<div class="img-works">
+			<a href="#particles-js"><img src="img/works/this.jpg" style="width:100%"></a>
+      <a href="#particles-js">
+      <div class="overlay-works"></div>
+			<div class="text-over-works">Back to top</div>
+      </a>
+		</div>
+      <h4><b>Web</b></h4>
+      <p>My portfolio</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg24" src="img/works/3d1.png" alt="3D models made in Blender" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D models made in Blender</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg25" src="img/works/3d2.png" alt="3D models made in Blender" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D models made in Blender</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg26" src="img/works/3d3.png" alt="3D model made in Blender" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D model made in Blender</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg27" src="img/works/3d4.png" alt="3D models made in Blender" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D models made in Blender</p>
+    </div>
+  </div>
+  
+  
+
+
+  <div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  <span class="close-btn-side">&times;</span>
+</div>
+
+<!-- End portfolio gallery grid -->
+</div>
+
+<!-- End main div for "My works" -->
+</div>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - CONTACT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="contact">
+<h2>Let's get in touch!</h2>
+<p>Want to give me a job? Discuss your idea for a project or just want to say hi? Awesome! I'd love to connect with you.</p>
+
+
+<div class="contact text-center">
+	<span class="fa fa-envelope"></span>
+	<p><b>domagojdugi2@gmail.com</b></p>
+</div>
+
+<h3><b>Follow Me</b></h3>
+
+<div class="soc-icon-cont">
+<a href="https://www.facebook.com/domagoj.dugi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://www.youtube.com/channel/UC9TuosA7rcxk9TShHpOQbDg/videos?view=0&sort=dd&shelf_id=0" target="_blank" title="YouTube"><i class="fab fa-youtube"></i><a/>
+<a href="https://github.com/DomagojDD" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+<a href="https://500px.com/domagoj_dugi" target="_blank" title="500px"><i class="fab fa-500px"></i></a>
+</div>
+
+</div>
+
+
+
+<!-- Scroll menu on top -->
+<div id="navbar">
+<br>
+<a href="#"><b>Domagoj Dugi</b></a>
+</div>
+
+<!-- Hamburger icon -->
+<span id="side-btn" onclick="openNav()">&#9776;</span>
+
+
+
+
+
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/index.js"></script>
+<script src="js/modal_img.js"></script>
+<script src="js/backtotop.js"></script>
+
+
+
+
+</body>
+</html>

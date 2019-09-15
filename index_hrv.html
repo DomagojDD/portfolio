@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Domagoj Dugi | Portfolio</title>
+  <meta name="description" content="Portfolio by Domagoj Dugi">
+  <meta name="author" content="Domagoj Dugi"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link href="socicon/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - HOME - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- Particles open div -->
+<div id="particles-js">
+
+		<!-- Sidebar -->
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#particles-js">Početna</a>
+			<a href="#about">O meni</a>
+			<a href="#main-works">Moji radovi</a>
+			<a href="#contact">Kontakt</a>
+		</div>
+	
+		<!-- Title -->
+		<div class="display-text">
+			<div id="title-text">
+				<h1 style="font-size:60px;">Hej! Ja sam Domagoj</h1>
+				<h2>Kreativan, entuzijastičan i cool inženjer multimedije</h2>
+				<br>
+				<br>
+			</div>
+			<a href="#about" class="start-btn">VIŠE O MENI</a>
+		</div>
+
+		<!-- Select language in text form -->
+		<div class="language-select">
+			<a href="index.html" class="language">English</a>
+			<a href="index_hrv.html" class="language active-lang"> | Hrvatski</a>
+		</div>
+</div>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - ABOUT ME - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="about">
+  <div class="container">
+
+    <!-- Title "About me" -->
+    <div class="section-title text-center center">
+      <h2>O meni</h2>
+	       <br>
+	       <br>
+    </div>
+
+    <!-- Text and photo about me -->
+    <div class="row">
+      <div class="col-md-12 text-center"><img src="img/about.png" class="img-responsive"></div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>Moje ime je Domagoj Dugi. Ja sam fotograf, snimatelj, montažer, dizajner, developer i više manje sve vezano uz multimediju. Uvijek nastojim kombinirati svoje znanje i vještine kako bi moji projekti bili što bolji i uspješniji.<p>
+		  <p>U srednjoj školi kao medijski tehničar stekao sam mnogo znanja i iskustva vezanog za fotografiju, video i televiziju. Također sam sudjelovao u projektima Comenius i ACES u sklopu kojih sam bio u Turskoj i Sjevernoj Makedoniji. Tamo sam upoznao druge kulture i stekao nova poznanstva.<p>
+		  <p>Nakon toga, upisao sam studij Multimedije na Sveučilištu Sjever koji još uvijek pohađam. Tamo sam unaprijedio svoje znanje i stekao neka nova kao što su dizajn, programiranje i marketing.<p>
+		  <p>Za sebe bih rekao da sam odgovoran, snalažljiv i uvijek spreman pomoći. Volim učiti nove stvari i razmjenjivati znanje s drugima. U slobodno vrijeme volim sport, glazbu i putovanja. Pouzdana sam osoba, marljivo radim i vjerujem da me te kvalitete čine idealnim za svako radno mjesto. <p>
+		    </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - MY WORKS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- Main div for "My works" -->
+<div id="main-works">
+
+<!-- Title "My works" -->
+<div class="title-works">
+	<div class="section-title text-center center">
+		<h2>Moji radovi</font></h2>
+	</div>
+</div>
+
+<!-- Menu buttons for works selection -->
+<div id="myBtnContainer" align="center">
+  <button class="btn-works active-works" onclick="filterSelection('all')"><b>Pokaži sve</b></button>
+  <button class="btn-works" onclick="filterSelection('photos')"><b>Fotografija</b></button>
+  <button class="btn-works" onclick="filterSelection('uxui')"><b>UX/UI</b></button>
+  <button class="btn-works" onclick="filterSelection('animations')"><b>Animacija</b></button>
+  <button class="btn-works" onclick="filterSelection('designs')"><b>Dizajn</b></button>
+  <button class="btn-works" onclick="filterSelection('videos')"><b>Video</b></button>
+  <button class="btn-works" onclick="filterSelection('web')"><b>Web</b></button>
+  <button class="btn-works" onclick="filterSelection('3d')"><b>3D Modeli</b></button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row-works">
+
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg1" src="img/works/1.jpg" alt="Ulična fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Ulična fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg2" src="img/works/2.jpg" alt="Ulična fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Ulična fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg3" src="img/works/3.jpg" alt="Ulična fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Ulična fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg4" src="img/works/4.jpg" alt="Portretna fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Portretna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg5" src="img/works/5.jpg" alt="Portretna fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Portretna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg6" src="img/works/6.jpg" alt="Portretna fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+     <h4><b>Fotografija</b></h4>
+      <p>Portretna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg7" src="img/works/7.jpg" alt="Koncertna fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+     <h4><b>Fotografija</b></h4>
+      <p>Koncertna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg8" src="img/works/8.jpg" alt="Koncertna fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+       <p>Koncertna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg9" src="img/works/9.jpg" alt="Koncertna fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Koncertna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg10" src="img/works/10.jpg" alt="Fotografija pokreta" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Fotografija pokreta</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg11" src="img/works/11.jpg" alt="Fotografija pokreta" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Fotografija pokreta</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg12" src="img/works/12.jpg" alt="Tekstura" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Teksturna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg13" src="img/works/13.jpg" alt="Splash efekt" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Splash fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg14" src="img/works/14.jpg" alt="Vatra" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Fotografija vatre</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg15" src="img/works/15.jpg" alt="Fotografija prirode" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+       <h4><b>Fotografija</b></h4>
+      <p>Fotografija prirode</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg16" src="img/works/17.jpg" alt="Fotografija prirode" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Fotografija prirode</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg17" src="img/works/18.jpg" alt="Fotografija prirode" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Fotografija prirode</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg18" src="img/works/16.jpg" alt="Pejzažna fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Pejzažna fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg19" src="img/works/19.jpg" alt="Mrtva priroda" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Mrtva priroda</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg20" src="img/works/20.jpg" alt="Produkt fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Produkt fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column photos">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg21" src="img/works/21.jpg" alt="Produkt fotografija" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Fotografija</b></h4>
+      <p>Produkt fotografija</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/l_WtVmyNoRI" target="_blank"><img src="img/works/video1.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/l_WtVmyNoRI" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Berba grožđa</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/ppdnQRSbLy0" target="_blank"><img src="img/works/video2.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/ppdnQRSbLy0" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Promotivni film za volontiranje</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/x196am2-amc" target="_blank"><img src="img/works/video3.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/x196am2-amc" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Comenius projekt u Turskoj</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/f-ogbY2fqcE" target="_blank"><img src="img/works/video4.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/f-ogbY2fqcE" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Božićni video</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://www.youtube.com/watch?v=SH8aoeT-3GQ&feature=youtu.be" target="_blank"><img src="img/works/video5.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=SH8aoeT-3GQ&feature=youtu.be" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Promotivni video o okolišu</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://www.youtube.com/watch?v=dyztA-o_y2w" target="_blank"><img src="img/works/video6.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=dyztA-o_y2w" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Promotivni video za Advent u Varaždinu</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/RnfmGN3orHY" target="_blank"><img src="img/works/video7.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/RnfmGN3orHY" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Glazbeni spot</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://www.youtube.com/watch?v=KYFb2qEvOq0" target="_blank"><img src="img/works/video8.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=KYFb2qEvOq0" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>Dan škole Vinica</p>
+    </div>
+  </div>
+  
+  <div class="column videos">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://www.youtube.com/watch?v=uAGsfewhliQ" target="_blank"><img src="img/works/video9.jpg" style="width:100%"></a>
+      <a href="https://www.youtube.com/watch?v=uAGsfewhliQ" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Video</b></h4>
+      <p>ACES projekt u Skoplju</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/BZBpKpD3Pvs" target="_blank"><img src="img/works/anim1.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/BZBpKpD3Pvs" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Animacija</b></h4>
+      <p>Izrađeno u programu After effects</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/7KqjKURHv6c" target="_blank"><img src="img/works/anim2.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/7KqjKURHv6c" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Animacija</b></h4>
+      <p>Izrađeno u programu After effects</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/Xv6kMBw-sug" target="_blank"><img src="img/works/anim3.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/Xv6kMBw-sug" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Animacija</b></h4>
+      <p>Animirana kinetička tipografija</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://youtu.be/DGizHIgclT8" target="_blank"><img src="img/works/anim4.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/DGizHIgclT8" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Animacija</b></h4>
+      <p>Animirani intro za video</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			<a href="https://youtu.be/InVIX4OX5po" target="_blank"><img src="img/works/anim5.jpg" style="width:100%"></a>
+      <a href="https://youtu.be/InVIX4OX5po" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Animacija</b></h4>
+      <p>Izrađeno u programu After effects</p>
+    </div>
+  </div>
+  
+  <div class="column animations">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://youtu.be/Zo9PTh5lgrQ" target="_blank"><img src="img/works/anim6.jpg" alt="Mountains" style="width:100%"></a>
+      <a href="https://youtu.be/Zo9PTh5lgrQ" target="_blank">
+      <div class="overlay-works"></div>
+  		<div class="text-over-works">Pogledaj na Youtubeu</div>
+      </a>
+		</div>
+      <h4><b>Animacija</b></h4>
+      <p>Animacije izrađene u Mayi i Blenderu</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg22" src="img/works/plakat2.jpg" alt="Promotivni plakat" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Dizajn</b></h4>
+      <p>Promotivni plakat</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg23" src="img/works/plakat.jpg" alt="Plakat izrađen u Photoshopu" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>Dizajn</b></h4>
+      <p>Plakat izrađen u Photoshopu</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/letak.pdf" target="_blank"><img src="img/works/letak.jpg" style="width:100%"></a>
+      <a href="img/works/letak.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">Pogledaj PDF</div>
+      </a>
+		</div>
+      <h4><b>Dizajn</b></h4>
+      <p>Dizajn letka</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/barkod.pdf" target="_blank"><img src="img/works/barkod.jpg" style="width:100%"></a>
+      <a href="img/works/barkod.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">Pogledaj PDF</div>
+      </a>
+		</div>
+      <h4><b>Dizajn</b></h4>
+      <p>Kreativni barkod</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/dinamika.pdf" target="_blank"><img src="img/works/dinamika.jpg" style="width:100%"></a>
+      <a href="img/works/dinamika.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">Pogledaj PDF</div>
+      </a>
+		</div>
+      <h4><b>Dizajn</b></h4>
+      <p>Dinamična tipografija</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			 <a href="img/works/fotoletak.pdf" target="_blank"><img src="img/works/fotoletak.jpg" style="width:100%"></a>
+      <a href="img/works/fotoletak.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">Pogledaj PDF</div>
+      </a>
+		</div>
+      <h4><b>Dizajn</b></h4>
+      <p>Letak o fotografiji</p>
+    </div>
+  </div>
+  
+  <div class="column designs">
+    <div class="content">
+		<div class="img-works">
+			<a href="img/works/knjiga.pdf" target="_blank"><img src="img/works/knjiga.jpg" style="width:100%"></a>
+      <a href="img/works/knjiga.pdf" target="_blank">
+      <div class="overlay-works"></div>
+      <div class="text-over-works">Pogledaj PDF</div>
+      </a>
+		</div>
+      <h4><b>Dizajn</b></h4>
+      <p>Dizajn knjige</p>
+    </div>
+  </div>
+  
+  
+  
+  <div class="column web">
+    <div class="content">
+		<div class="img-works">
+			 <a href="https://domagojdd.github.io/lotr-website/index.html" target="_blank"><img src="img/works/lotrweb.jpg" style="width:100%"></a>
+      <a href="https://domagojdd.github.io/lotr-website/index.html" target="_blank">
+      <div class="overlay-works"></div>
+			<div class="text-over-works">Pogledaj stranicu</div>
+      </a>
+		</div>
+      <h4><b>Web</b></h4>
+      <p>Web stranica za LOTR</p>
+    </div>
+  </div>
+  
+  <div class="column web">
+    <div class="content">
+		<div class="img-works">
+			<a href="#particles-js"><img src="img/works/ova.jpg" style="width:100%"></a>
+      <a href="#particles-js">
+      <div class="overlay-works"></div>
+			<div class="text-over-works">Vrati se na vrh</div>
+      </a>
+		</div>
+      <h4><b>Web</b></h4>
+      <p>Moj portfolio</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg24" src="img/works/3d1.png" alt="3D modeli izrađeni u Blenderu" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D modeli izrađeni u Blenderu</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg25" src="img/works/3d2.png" alt="3D modeli izrađeni u Blenderu" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D modeli izrađeni u Blenderu</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg26" src="img/works/3d3.png" alt="3D model izrađen u Blenderu" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D model izrađen u Blenderu</p>
+    </div>
+  </div>
+  
+  <div class="column 3d">
+    <div class="content">
+		<div class="img-works">
+			<img id="myImg27" src="img/works/3d4.png" alt="3D modeli izrađeni u Blenderu" style="width:100%">
+      <div class="overlay-works-photo"></div>
+		</div>
+      <h4><b>3D Model</b></h4>
+      <p>3D modeli izrađeni u Blenderu</p>
+    </div>
+  </div>
+  
+  
+
+
+  <div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+  <span class="close-btn-side">&times;</span>
+</div>
+
+<!-- End portfolio gallery grid -->
+</div>
+
+<!-- End main div for "My works" -->
+</div>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - CONTACT - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<div id="contact">
+<h2>Kontaktiraj me!</h2>
+<p>Želiš me zaposliti? Diskutirati o ideji za projekt ili razgovarati sa mnom? Odlično! Volio bih se ćuti s tobom. </p>
+
+
+<div class="contact text-center">
+	<span class="fa fa-envelope"></span>
+	<p><b>domagojdugi2@gmail.com</b></p>
+</div>
+
+<h3><b>Prati me</b></h3>
+
+<div class="soc-icon-cont">
+<a href="https://www.facebook.com/domagoj.dugi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://www.youtube.com/channel/UC9TuosA7rcxk9TShHpOQbDg/videos?view=0&sort=dd&shelf_id=0" target="_blank" title="YouTube"><i class="fab fa-youtube"></i><a/>
+<a href="https://github.com/DomagojDD" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+<a href="https://500px.com/domagoj_dugi" target="_blank" title="500px"><i class="fab fa-500px"></i></a>
+</div>
+
+</div>
+
+
+
+<!-- Scroll menu on top -->
+<div id="navbar">
+<br>
+<a href="#"><b>Domagoj Dugi</b></a>
+</div>
+
+<!-- Hamburger icon -->
+<span id="side-btn" onclick="openNav()">&#9776;</span>
+
+
+
+
+
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/index.js"></script>
+<script src="js/modal_img.js"></script>
+<script src="js/backtotop.js"></script>
+
+
+
+
+</body>
+</html>
